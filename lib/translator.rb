@@ -15,9 +15,10 @@ end
   #Sorry, that emoticon was not found
 #end
 
-def get_english_meaning(file_path,jemote)
+def get_english_meaning(file_path,j_emote)
   library = load_library(file_path).each do |meaning, emote|
-    
+    if j_emote == emote
+      puts meaning
   binding.pry
   end
 end
