@@ -9,7 +9,6 @@ new_hash = {}
 binding.pry    
     new_hash[key.to_sym][:japanese] = value[1]
   end
-binding.pry
 new_hash
 end
 
