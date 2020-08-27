@@ -22,4 +22,4 @@ end
 #end
 
 
-load_library
+load_library(path)
