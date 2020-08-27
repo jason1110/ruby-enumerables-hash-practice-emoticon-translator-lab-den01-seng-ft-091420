@@ -3,12 +3,12 @@ require 'pry'
 
 def load_library(path)
 get_file = YAML.load_file(path)
-binding.pry
 new_hash = {}
   get_file.each do |key,value|
     new_hash[key.to_sym][:english] = value[0]
     new_hash[key.to_sym][:japanese] = value[1]
   end
+binding.pry
 new_hash
 end
 
