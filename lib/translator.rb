@@ -23,6 +23,5 @@ def get_english_meaning(file_path,j_emote)
      end
     end
 english_meaning
-end
 #binding.pry
 end
