@@ -19,7 +19,7 @@ def get_english_meaning(file_path,j_emote)
   english_meaning = ""
   load_library(file_path).map do |meaning, emote|
     if j_emote == emote[:japanese]
-      englishg_meaning = meaning
+      english_meaning = meaning.to_s
     end
   end
   english_meaning
