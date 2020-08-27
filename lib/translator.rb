@@ -10,8 +10,8 @@ new_hash = {}
     new_hash[key][:japanese] = value[1]
   end
 new_hash
-end
 binding.pry
+end
 #def get_japanese_emoticon(load_library,eng_emote)
   # code goes here
 #end
