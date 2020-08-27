@@ -20,7 +20,7 @@ def get_english_meaning(file_path,j_emote)
     if j_emote == emote[:japanese]
       meaning
     else
-      sorry_message
+      "Sorry"
   binding.pry
     end
   end
