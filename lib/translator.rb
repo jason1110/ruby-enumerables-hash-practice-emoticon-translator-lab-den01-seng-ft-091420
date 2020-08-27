@@ -16,5 +16,7 @@ end
 #end
 
 #def get_english_meaning(load_library,jemote)
-  jemote.map
+  jemote.map do |emote|
+    emote
+  binding.bry  
 #end
