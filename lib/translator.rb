@@ -22,9 +22,7 @@ def get_english_meaning(file_path,j_emote)
        english_meaning = meaning.to_s
      end
     end
-  if english_meaning = ""
-    "Sorry, that emoticon was not found"
-  end
-english_meaning  
+
+english_meaning
 #binding.pry
 end
