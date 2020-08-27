@@ -8,7 +8,6 @@ new_hash = {}
     new_hash = {key => {:english => value[0], :japanese => value[1]}}
     new_hash
   end
-new_hash
 binding.pry
 end
 #def get_japanese_emoticon(load_library,eng_emote)
