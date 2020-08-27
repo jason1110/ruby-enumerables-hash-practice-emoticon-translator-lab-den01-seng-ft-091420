@@ -9,7 +9,6 @@ new_hash = {}
   end
 new_hash
 end
-binding.pry
 #def get_japanese_emoticon(load_library,eng_emote)
   # code goes here
 #end
