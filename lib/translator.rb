@@ -16,7 +16,8 @@ end
 #end
 
 def get_english_meaning(file_path,jemote)
-  library = load_library(file_path).map do |meaning, emote|
+  library = load_library(file_path).each do |meaning, emote|
+  jemote == library[meaning][:japanese]
   binding.pry
   end
 end
