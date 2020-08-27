@@ -2,6 +2,7 @@ require 'yaml'
 require 'pry'
 
 def load_library(emote_file)
+binding.pry
 get_file = YAML.load_file(emote_file)
 new_hash = {}
   make_hash = get_file.each do |key,value|
