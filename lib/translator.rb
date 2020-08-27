@@ -1,8 +1,8 @@
 require 'yaml'
 require 'pry'
 
-def load_library(file)
-get_file = YAML.load_file(file)
+def load_library(emote_file)
+get_file = YAML.load_file(emote_file)
 new_hash = {}
   make_hash = get_file.each do |key,value|
     new_hash[key.to_sym][:english] = value[0]
