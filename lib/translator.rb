@@ -17,15 +17,14 @@ end
 
 def get_english_meaning(file_path,j_emote)
   english_meaning = ""
-  load_library(file_path).map do |meaning, emote|
-    if j_emote == emote[:japanese]
-      english_meaning = meaning.to_s
+    load_library(file_path).map do |meaning, emote|
+     if j_emote == emote[:japanese]
+       english_meaning = meaning.to_s
+     end
     end
-  end
   if english_meaning = ""
     "Sorry, that emoticon was not found"
-  else  
-     english_meaning
-  end   
+  end
+english_meaning  
 #binding.pry
 end
