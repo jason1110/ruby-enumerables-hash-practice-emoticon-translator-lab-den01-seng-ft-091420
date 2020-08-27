@@ -8,7 +8,7 @@ make_hash = get_file.each do |key, value|
     new_hash = {key => {:english => value[0], :japanese => value[1]}}
   end
 make_hash  
-binding.pry
+#binding.pry
 end
 #def get_japanese_emoticon(load_library,eng_emote)
   # code goes here
