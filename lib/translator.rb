@@ -26,5 +26,6 @@ def get_english_meaning(file_path,j_emote)
     "Sorry, your princess is in another castle"
   else  
      english_meaning
+  end   
 binding.pry
 end
