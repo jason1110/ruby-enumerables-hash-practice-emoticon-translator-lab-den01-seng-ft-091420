@@ -20,5 +20,6 @@ def get_english_meaning(file_path,j_emote)
     if j_emote == emote
       puts meaning
   binding.pry
+    end
   end
 end
