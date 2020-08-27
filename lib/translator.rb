@@ -21,7 +21,7 @@ def get_english_meaning(file_path,j_emote)
     if j_emote == emote[:japanese]
       english_meaning = meaning.to_s
     end
-binding.pry
   end
   english_meaning
+binding.pry
 end
