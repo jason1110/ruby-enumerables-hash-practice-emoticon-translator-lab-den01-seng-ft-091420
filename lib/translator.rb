@@ -5,8 +5,8 @@ def load_library(path)
 get_file = YAML.load_file(path)
 new_hash = {}
   get_file.each do |key,value|
-binding.pry
     new_hash[key.to_sym][:english] = value[0]
+binding.pry    
     new_hash[key.to_sym][:japanese] = value[1]
   end
 binding.pry
