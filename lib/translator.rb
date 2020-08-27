@@ -9,7 +9,7 @@ new_hash = {}
     new_hash[key.to_sym][:english] = value[0]
     new_hash[key.to_sym][:japanese] = value[1]
   end
-puts new_hash
+new_hash
 end
 
 #def get_japanese_emoticon(load_library,eng_emote)
