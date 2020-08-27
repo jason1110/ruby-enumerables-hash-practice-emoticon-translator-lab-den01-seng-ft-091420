@@ -6,6 +6,7 @@ get_file = YAML.load_file(path)
 new_hash = {}
   get_file.each do |key, value|
     new_hash = {key => {:english => value[0], :japanese => value[1]}}
+    new_hash
   end
 new_hash
 binding.pry
