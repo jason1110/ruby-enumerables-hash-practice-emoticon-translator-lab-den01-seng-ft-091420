@@ -19,5 +19,3 @@ end
 def get_english_meaning(load_library,jemote)
   # code goes here
 end
-
-load_library
