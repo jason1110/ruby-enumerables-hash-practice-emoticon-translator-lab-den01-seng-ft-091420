@@ -12,10 +12,10 @@ binding.pry
 new_hash
 end
 
-def get_japanese_emoticon(load_library,eng_emote)
+#def get_japanese_emoticon(load_library,eng_emote)
   # code goes here
-end
+#end
 
-def get_english_meaning(load_library,jemote)
+#def get_english_meaning(load_library,jemote)
   # code goes here
-end
+#end
