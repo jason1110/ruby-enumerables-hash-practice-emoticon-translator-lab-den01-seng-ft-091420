@@ -1,8 +1,8 @@
 require 'yaml'
 require 'pry'
 
-def load_library(path)
-get_file = YAML.load_file(path)
+def load_library(file_path)
+get_file = YAML.load_file(file_path)
 new_hash = {}
   get_file.each do |key, value|
     new_hash[key] = {}
