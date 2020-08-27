@@ -7,7 +7,7 @@ new_hash = {}
   get_file.each do |key, value|
     new_hash[key][:english] = value[0]
 binding.pry    
-    new_hash[key.to_sym][:japanese] = value[1]
+    new_hash[key][:japanese] = value[1]
   end
 new_hash
 end
