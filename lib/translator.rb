@@ -12,12 +12,13 @@ new_hash = {}
 new_hash
 end
 #def get_japanese_emoticon(load_library,eng_emote)
-  # code goes here
+  #Sorry, that emoticon was not found
 #end
 
 def get_english_meaning(load_library,jemote)
   jemote.map do |emote|
     emote
+    
   binding.pry
   end
 end
