@@ -11,9 +11,15 @@ new_hash = {}
   end
 new_hash
 end
-#def get_japanese_emoticon(load_library,eng_emote)
-  #Sorry, that emoticon was not found
-#end
+def get_japanese_emoticon(file_path,eng_emote)
+japanese_emoticon = "sorry dont know what that means"
+  load_library(file_path).each_value do |english, japanese|
+    if english == japanese
+     japanese_emoticon = japanese
+    end
+  end
+japanese_emoticon
+end
 
 def get_english_meaning(file_path,j_emote)
   english_meaning = "Sorry, that emoticon was not found"
@@ -23,5 +29,4 @@ def get_english_meaning(file_path,j_emote)
      end
     end
 english_meaning
-#binding.pry
 end
