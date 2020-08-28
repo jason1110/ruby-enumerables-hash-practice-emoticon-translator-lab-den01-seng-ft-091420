@@ -13,7 +13,7 @@ new_hash
 end
 def get_japanese_emoticon(file_path,eng_emote)
 japanese_emoticon = "sorry dont know what that means"
-  load_library(file_path).each do |eng_key, eng_value|
+  load_library(file_path).each do |main_key, both_values|
     binding.pry
     if english == japanese
      japanese_emoticon = japanese
