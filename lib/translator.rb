@@ -13,9 +13,9 @@ new_hash
 end
 def get_japanese_emoticon(file_path,eng_emote)
 japanese_emoticon = "Sorry, that emoticon was not found"
-  load_library(file_path).each do |main_key, both_values|
-    if eng_emote == both_values[:english]
-     japanese_emoticon = both_values[:japanese]
+  load_library(file_path).each_value do |emotes|
+    if eng_emote == emotes[:english]
+     japanese_emoticon = emotes[:japanese]
     end
   end
 japanese_emoticon
@@ -23,8 +23,8 @@ end
 
 def get_english_meaning(file_path,j_emote)
   english_meaning = "Sorry, that emoticon was not found"
-    load_library(file_path).each do |meaning, emote|
-     if j_emote == emote[:japanese]
+    load_library(file_path).each do |meaning, emotes|
+     if j_emote == emotes[:japanese]
        english_meaning = meaning.to_s
      end
     end
