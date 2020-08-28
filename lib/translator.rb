@@ -16,6 +16,7 @@ japanese_emoticon = "sorry dont know what that means"
   load_library(file_path).each_value do |english, japanese|
     if english == japanese
      japanese_emoticon = japanese
+   binding.pry
     end
   end
 japanese_emoticon
