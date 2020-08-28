@@ -16,7 +16,6 @@ japanese_emoticon = "sorry dont know what that means"
   load_library(file_path).each do |main_key, both_values|
     if eng_emote == both_values[:english]
      japanese_emoticon = both_values[:japanese]
-     binding.pry
     end
   end
 japanese_emoticon
